@@ -1,0 +1,212 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  h1{
+    display: flex;
+    color:#007bff;
+    font-weight: bold;
+    justify-content: center;
+  }
+  h3 {
+    margin-top: 0;
+  }
+  /*###########*/
+  .subtitulo {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-left: 140px;
+  }
+  
+  .subtitulo h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .subtitulo h3:first-child {
+    margin-right: 50px;
+  }
+  .subtitulo h3:nth-child(2) {
+    margin-right: 160px;
+  }
+
+  .resumen h1{
+    color:#007bff;
+    font-size:x-large;
+
+  }
+
+  /*#################*/
+  .input-group {
+    display: flex;
+    margin-bottom: 20px;
+    gap:5px;
+  }
+  
+  .input-group input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 5px 5px;
+    
+  }
+  
+  .input-group button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .input-group button:hover {
+    background-color: #0056b3;
+  }
+  
+  .list-group {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .list-group li {
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    
+  }
+  .cantidad-tareas {
+    color:white;
+    width: 180px;
+    background-color: #cb3234; /* Color gris (plomo) */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;    
+    margin-bottom: 10px;
+    margin-left: 33%;    
+  } 
+  .cantidad-tareas:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  } 
+
+  .tareas-completadas {
+    color:white;
+    width: 180px;
+    background-color: #32cd32; /* Color verde */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 33%;
+  }
+  .tareas-completadas:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  li span {
+    display: flex;
+    align-items: center;
+  }
+  
+  li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  li button i {
+    font-size: 18px;
+    color: #333;
+    margin-right: 10px;
+  }
+  /*presentacion del checkbox*/
+  .custom-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .custom-checkbox:hover {
+    transform: scale(1.3);
+  }
+  
+  .custom-checkbox:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+    transform: scale(1);
+  }
+  
+  .custom-checkbox:checked:before {
+    content: "\2713";
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /*efecto del basurero*/
+  .fa-trash-can:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+  }
+
+  .tarea-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .tarea-accion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .tarea-id {
+    justify-self: center;
+  }
+  
+  .tarea-descripcion {
+    justify-self: start;
+  }
+  
+  .tarea-tiempo {
+    justify-self: end;
+  }
+
+  
